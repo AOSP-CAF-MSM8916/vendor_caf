@@ -63,6 +63,13 @@ PRODUCT_PACKAGES += SoundRecorder
 # Build WallpaperPicker
 PRODUCT_PACKAGES += WallpaperPicker
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0 \
+    android.hidl.base@1.0.vendor \
+    android.hidl.manager@1.0.vendor
+
 ifneq ($(HOST_OS),linux)
 ifneq ($(sdclang_already_warned),true)
 $(warning **********************************************)
