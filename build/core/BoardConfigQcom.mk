@@ -100,6 +100,6 @@ ifeq ($(TARGET_HW_DISK_ENCRYPTION),true)
 endif
 
 PRODUCT_SOONG_NAMESPACES += \
-  hardware/qcom/audio-caf/$(QCOM_HARDWARE_VARIANT) \
-  hardware/qcom/display-caf/$(QCOM_HARDWARE_VARIANT) \
-  hardware/qcom/media-caf/$(QCOM_HARDWARE_VARIANT)
+    hardware/qcom/$(QCOM_HARDWARE_VARIANT)/media \
+    hardware/qcom/$(QCOM_HARDWARE_VARIANT)/display \
+    hardware/qcom/$(QCOM_HARDWARE_VARIANT)/audio
